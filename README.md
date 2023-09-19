@@ -1,38 +1,25 @@
-# CSVcrypter
+# Encriptação AES para Arquivos CSV
 
-## Descrição
+Projeto para encriptar e decriptar arquivos CSV utilizando a cifra AES.
 
-CSVcrypter é uma ferramenta Python projetada para encriptar arquivos CSV utilizando uma chave de segurança específica. O objetivo é garantir que seus dados sensíveis armazenados em formatos CSV estejam seguros e protegidos.
+# Descrição
 
-## Requisitos
+Este projeto foi criado para encriptar dados sensíveis em um arquivo CSV. É usado o algoritmo AES (Advanced Encryption Standard).
 
-- Python 3.x
-- Bibliotecas: csv, cryptography
+# Dependências
 
-## Como usar
-
-1 - Clone este repositório para sua máquina local.
+ - Python 3.x
+ - Bibliotecas Python: Crypto e pandas. Para instalá-las, execute:
 ```
-git clone https://github.com/seu_usuario/CSVcrypter.git
+pip install pycryptodome pandas
 ```
-2 - Entre no diretório do projeto e instale as dependências necessárias.
+# Uso
+
+# Encriptação
+
+1- Coloque o arquivo que deseja encriptar na mesma pasta do script e nomeie-o como original.csv.
+2- Execute o script encrypt.py:
 ```
-cd CSVcrypter
-pip install -r requirements.txt
+python encrypt.py
 ```
-3 - Execute o script.
-```
-python csvcrypter.py --input seu_arquivo.csv --output arquivo_criptografado.csv
-```
-## Parâmetros
-
---input ou -i: Define o arquivo CSV de entrada que você deseja encriptar.
---output ou -o: Define o nome do arquivo CSV de saída que será criado após a encriptação.
-
-## Notas
-
-Este script é apenas para fins educativos e deve ser usado em ambientes controlados. Certifique-se de ter as permissões adequadas ao manipular arquivos CSV contendo informações sensíveis.
-
-## Licença
-
-Licença MIT. Consulte o arquivo LICENSE para mais informações.
+O arquivo encriptado será salvo como encrypted.csv.
